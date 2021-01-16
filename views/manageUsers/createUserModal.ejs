@@ -1,0 +1,35 @@
+<div id="createUser-modal" class="modal fade" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header bg-primary">
+                <h6 class="text-white">Create New User</h6>
+                <a class="close" data-dismiss="modal">×</a>
+			</div>
+			<form id="createUserForm" name="createUser" role="form">
+				<div class="modal-body">	
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Name</label>
+                            <input type="text" id="username" name="username" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control">
+                        </div>
+                    </div>			
+					<div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="message">Contact</label>
+                            <input name="contact" id="contact" class="form-control"/>
+                        </div>	
+                    </div>
+									
+				</div>
+				<div class="modal-footer">					
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<input type="submit" class="btn btn-success" id="submit" value="Save">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
