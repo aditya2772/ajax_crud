@@ -1,0 +1,36 @@
+<div id="editUser-modal" class="modal fade" role="dialog">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header bg-warning">
+                <h6 class="text-white">Edit User</h6>
+                <a class="close" data-dismiss="modal">×</a>
+			</div>
+			<form id="editUserForm" name="editUser" role="form">
+				<div class="modal-body">	
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Name</label>
+                            <input type="hidden" id="editUserId" name="_id" class="form-control">
+                            <input type="text" id="editUsername" name="username" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" name="editEmail" id="editUserEmail" class="form-control">
+                        </div>
+                    </div>			
+					<div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="message">Contact</label>
+                            <input name="contact" id="editContact" class="form-control"/>
+                        </div>	
+                    </div>
+									
+				</div>
+				<div class="modal-footer">					
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<input type="submit" class="btn btn-warning" id="submit" value="Update">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
